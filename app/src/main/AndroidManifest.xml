@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobile.project.absensisiswa">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Absensi Siswa"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MenuAdmin.LihatPelajaran"></activity>
+        <activity android:name=".MenuAdmin.InputPelajaran" />
+        <activity android:name=".MenuGuru.TentangApp" />
+        <activity android:name=".MenuGuru.AbsensiAction" />
+        <activity android:name=".MenuGuru.ProfileSekolah" />
+        <activity android:name=".MenuAdmin.Laporan" />
+        <activity android:name=".MenuAdmin.SIswaKelas3" />
+        <activity android:name=".MenuAdmin.SiswaKelas2" />
+        <activity android:name=".MenuAdmin.SiswaKelas1" />
+        <activity android:name=".MenuAdmin.DaftarSiswa" />
+        <activity android:name=".MenuAdmin.InputSiswa" />
+        <activity android:name=".MenuAdmin.Siswa" />
+        <activity
+            android:name=".Akun.Registrasi"
+            android:label="Register" />
+        <activity
+            android:name=".MenuGuru.HomeGuru"
+            android:label="Dashboard" />
+        <activity
+            android:name=".MenuAdmin.HomeAdmin"
+            android:label="Dashboard" />
+        <activity
+            android:name=".Akun.Login"
+            android:label="Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

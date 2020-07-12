@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "576421989208",
+    "firebase_url": "https://absensisiwa.firebaseio.com",
+    "project_id": "absensisiwa",
+    "storage_bucket": "absensisiwa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576421989208:android:e90f990bdd53b102b7732d",
+        "android_client_info": {
+          "package_name": "mobile.project.absensisiswa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576421989208-iakfqa68c4bbt9bqevd6crqfck7i9l7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smkn1bu.absensisiswa",
+            "certificate_hash": "d1b3a3b9e71ec2efe2e2570bd61fd0453f5bf362"
+          }
+        },
+        {
+          "client_id": "576421989208-fmfa9kp05pivqa497vpt7q7nomchd0dv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTHcP9fnCq82ELNAgyviPwE_fmtFO-UDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576421989208-fmfa9kp05pivqa497vpt7q7nomchd0dv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AbsensiSiswa</string>
+
+    <string-array name="pilihKelas">
+        <item> </item>
+        <item>Kelas 1</item>
+        <item>Kelas 2</item>
+        <item>Kelas 3</item>
+    </string-array>
+
+    <string-array name="bidangStudi">
+        <item> </item>
+        <item>IPA</item>
+        <item>IPS</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuAdmin.Laporan">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="3pt">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Pilih Kelas"
+    android:textColor="@color/colorAccent"
+    android:textStyle="bold"></TextView>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/pilihKelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/pilihKelas"
+            android:layout_marginBottom="7pt"
+            android:layout_marginTop="5pt">
+
+        </androidx.appcompat.widget.AppCompatSpinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/viewTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:enabled="false">
+            </EditText>
+
+            <Button
+                android:id="@+id/btnTgl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@color/colorAccent"
+                android:text="Pilih Tanggal"
+                android:textAllCaps="false"
+                android:layout_marginLeft="2pt">
+
+            </Button>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/tampilkan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Tampilkan"
+            android:textAllCaps="false"
+            android:layout_marginTop="7pt"
+            android:onClick="Tampilkan"></Button>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLaporan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10pt">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
