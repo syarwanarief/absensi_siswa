@@ -27,6 +27,7 @@ public class InputSiswa extends AppCompatActivity {
         final EditText nama = (EditText) findViewById(R.id.nama);
         final Spinner bidangStudi = (Spinner) findViewById(R.id.bidangStudi);
         final EditText mataPelajaran = (EditText) findViewById(R.id.mataPelajaran);
+//        final EditText noTelp = (EditText) findViewById(R.id.noTelp);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +36,7 @@ public class InputSiswa extends AppCompatActivity {
                 String stringNama = nama.getText().toString();
                 String stringKelas = kelas.getSelectedItem().toString();
                 String stringPelajaran = mataPelajaran.getText().toString();
+//                String stringNoTelp = noTelp.getText().toString();
                 String stringStudi = bidangStudi.getSelectedItem().toString();
 
                 DatabaseReference mRef = FirebaseDatabase.getInstance().getReference("Daftar_siswa").child(stringKelas).push();
@@ -49,10 +51,16 @@ public class InputSiswa extends AppCompatActivity {
                 keyBS.setValue(stringStudi);
                 keyMP.setValue(stringPelajaran);
 
+//                DatabaseReference mRef1 = FirebaseDatabase.getInstance().getReference("No Telp Wali Murid").child(stringKelas).child(stringNama).push();
+//
+//                DatabaseReference keynoTelp = mRef1.child("No Telp");
+//
+//                keynoTelp.setValue(stringNoTelp);
+
                 Toast.makeText(getApplicationContext(), "Berhasil Menambah", Toast.LENGTH_SHORT).show();
 
                 nama.setText("");
-                mataPelajaran.setText("");
+//                noTelp.setText("");
 
             }
         });

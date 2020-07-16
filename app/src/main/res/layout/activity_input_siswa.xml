@@ -46,6 +46,22 @@
             android:inputType="text">
         </EditText>
 
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="No Telp. Wali Murid"-->
+<!--            android:textColor="@color/colorAccent"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="10pt">-->
+<!--        </TextView>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/noTelp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number">-->
+<!--        </EditText>-->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
