@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuAdmin.Siswa">
-
+    tools:context=".MenuAdmin.DaftarProdi">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,10 +30,10 @@
             android:layout_marginTop="35pt">
 
             <Button
-                android:onClick="inputSiswa"
+                android:onClick="ipa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Input Siswa"
+                android:text="ipa"
                 android:textAlignment="center"
                 android:background="@color/colorAccent">
             </Button>
@@ -49,52 +48,16 @@
             android:layout_marginTop="10pt">
 
             <Button
+                android:id="@+id/klikips"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Daftar Siswa"
+                android:text="IPS"
                 android:textAlignment="center"
                 android:background="@color/colorAccent"
-                android:onClick="daftarSiswa">
-            </Button>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginTop="10pt">
-
-            <Button
-                android:onClick="inputPelajaran"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Input Pelajaran"
-                android:textAlignment="center"
-                android:background="@color/colorAccent">
-            </Button>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginTop="10pt">
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Daftar Pelajaran"
-                android:textAlignment="center"
-                android:background="@color/colorAccent"
-                android:onClick="daftarPelajaran">
+                android:onClick="ips">
             </Button>
 
         </RelativeLayout>
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

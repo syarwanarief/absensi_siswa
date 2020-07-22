@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mobile.project.absensisiswa">
 
-    <uses-permission android:name="android.permission.SEND_SMS"/>
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
@@ -11,17 +9,35 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuAdmin.LihatPelajaran"></activity>
-        <activity android:name=".MenuAdmin.InputPelajaran" />
-        <activity android:name=".MenuGuru.TentangApp" />
+        <activity android:name=".MenuAdmin.DaftarProdi"
+            android:label="Pilih Jurusan"></activity>
+        <activity android:name=".MenuAdmin.LihatPelajaran"
+            android:label="Daftar Pelajaran"/>
+        <activity android:name=".MenuAdmin.InputPelajaran"
+            android:label="Input Pelajaran"/>
+        <activity android:name=".MenuGuru.TentangApp"
+            android:label="Tentang Aplikasi"/>
         <activity android:name=".MenuGuru.AbsensiAction" />
-        <activity android:name=".MenuGuru.ProfileSekolah" />
-        <activity android:name=".MenuAdmin.Laporan" />
-        <activity android:name=".MenuAdmin.SIswaKelas3" />
-        <activity android:name=".MenuAdmin.SiswaKelas2" />
-        <activity android:name=".MenuAdmin.SiswaKelas1" />
-        <activity android:name=".MenuAdmin.DaftarSiswa" />
-        <activity android:name=".MenuAdmin.InputSiswa" />
+        <activity android:name=".MenuGuru.ProfileSekolah"
+            android:label="Profil"/>
+        <activity android:name=".MenuAdmin.Laporan"
+            android:label="Laporan"/>
+        <activity android:name=".MenuAdmin.SIswaIPAKelas3"
+            android:label="Daftar Siswa"/>
+        <activity android:name=".MenuAdmin.SiswaIPAKelas2"
+            android:label="Daftar Siswa"/>
+        <activity android:name=".MenuAdmin.SiswaIPAKelas1"
+            android:label="Daftar Siswa"/>
+        <activity android:name=".MenuAdmin.SIswaIPSKelas3"
+            android:label="Daftar Siswa"/>
+        <activity android:name=".MenuAdmin.SiswaIPSKelas2"
+            android:label="Daftar Siswa"/>
+        <activity android:name=".MenuAdmin.SiswaIPSKelas1"
+            android:label="Daftar Siswa"/>
+        <activity android:name=".MenuAdmin.DaftarSiswa"
+            android:label="Daftar Siswa"/>
+        <activity android:name=".MenuAdmin.InputSiswa"
+            android:label="Input Siswa"/>
         <activity android:name=".MenuAdmin.Siswa" />
         <activity
             android:name=".Akun.Registrasi"
@@ -43,5 +59,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
 
 </manifest>

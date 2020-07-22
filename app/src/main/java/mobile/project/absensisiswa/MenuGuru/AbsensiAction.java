@@ -52,6 +52,7 @@ public class AbsensiAction extends AppCompatActivity {
         viewTgl = (EditText) findViewById(R.id.tglAbsen);
         dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
         btnTgl = (Button) findViewById(R.id.btnTgl);
+
         btnTgl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

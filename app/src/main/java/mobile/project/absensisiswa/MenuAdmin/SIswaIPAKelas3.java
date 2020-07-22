@@ -25,7 +25,7 @@ import mobile.project.absensisiswa.R;
 import mobile.project.absensisiswa.RecyclerView.AdapterDaftarSiswa;
 import mobile.project.absensisiswa.RecyclerView.ModelDaftarSiswa;
 
-public class SiswaKelas1 extends AppCompatActivity {
+public class SIswaIPAKelas3 extends AppCompatActivity {
 
     List<ModelDaftarSiswa> list;
     ProgressDialog dialog;
@@ -33,7 +33,7 @@ public class SiswaKelas1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_siswa_kelas1);
+        setContentView(R.layout.activity_s_iswa_kelas3);
 
         dialog = new ProgressDialog(this);
         dialog.setMessage("Memuat Data...");
@@ -53,7 +53,7 @@ public class SiswaKelas1 extends AppCompatActivity {
 
 
         final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rvDaftarSiswa);
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Daftar_siswa").child("Kelas 1");
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Daftar_siswa").child("Kelas 3").child("IPA");
         reference.keepSynced(true);
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -72,8 +72,8 @@ public class SiswaKelas1 extends AppCompatActivity {
                     model.setBidang_Studi(vBS);
                     model.setMata_Pelajaran(vPelajaran);
                     list.add(model);
-                    AdapterDaftarSiswa adapter = new AdapterDaftarSiswa(list, SiswaKelas1.this);
-                    RecyclerView.LayoutManager layoutManager = new GridLayoutManager(SiswaKelas1.this, 1);
+                    AdapterDaftarSiswa adapter = new AdapterDaftarSiswa(list, SIswaIPAKelas3.this);
+                    RecyclerView.LayoutManager layoutManager = new GridLayoutManager(SIswaIPAKelas3.this, 1);
                     recyclerView.setLayoutManager(layoutManager);
                     recyclerView.setItemAnimator(new DefaultItemAnimator());
                     recyclerView.setAdapter(adapter);

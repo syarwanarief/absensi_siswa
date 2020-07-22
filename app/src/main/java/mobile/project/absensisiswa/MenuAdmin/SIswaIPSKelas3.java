@@ -1,16 +1,16 @@
 package mobile.project.absensisiswa.MenuAdmin;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -25,7 +25,7 @@ import mobile.project.absensisiswa.R;
 import mobile.project.absensisiswa.RecyclerView.AdapterDaftarSiswa;
 import mobile.project.absensisiswa.RecyclerView.ModelDaftarSiswa;
 
-public class SiswaKelas2 extends AppCompatActivity {
+public class SIswaIPSKelas3 extends AppCompatActivity {
 
     List<ModelDaftarSiswa> list;
     ProgressDialog dialog;
@@ -33,7 +33,7 @@ public class SiswaKelas2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_siswa_kelas2);
+        setContentView(R.layout.activity_siswa_ips_kelas3);
 
         dialog = new ProgressDialog(this);
         dialog.setMessage("Memuat Data...");
@@ -52,8 +52,8 @@ public class SiswaKelas2 extends AppCompatActivity {
         pdCanceller.postDelayed(progressRunnable, 30000);
 
 
-        final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rvDaftarSiswa);
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Daftar_siswa").child("Kelas 2");
+        final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rvDaftarSiswaIPS);
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Daftar_siswa").child("Kelas 3").child("IPS");
         reference.keepSynced(true);
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -72,8 +72,8 @@ public class SiswaKelas2 extends AppCompatActivity {
                     model.setBidang_Studi(vBS);
                     model.setMata_Pelajaran(vPelajaran);
                     list.add(model);
-                    AdapterDaftarSiswa adapter = new AdapterDaftarSiswa(list, SiswaKelas2.this);
-                    RecyclerView.LayoutManager layoutManager = new GridLayoutManager(SiswaKelas2.this, 1);
+                    AdapterDaftarSiswa adapter = new AdapterDaftarSiswa(list, SIswaIPSKelas3.this);
+                    RecyclerView.LayoutManager layoutManager = new GridLayoutManager(SIswaIPSKelas3.this, 1);
                     recyclerView.setLayoutManager(layoutManager);
                     recyclerView.setItemAnimator(new DefaultItemAnimator());
                     recyclerView.setAdapter(adapter);

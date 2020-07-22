@@ -39,7 +39,7 @@ public class InputSiswa extends AppCompatActivity {
 //                String stringNoTelp = noTelp.getText().toString();
                 String stringStudi = bidangStudi.getSelectedItem().toString();
 
-                DatabaseReference mRef = FirebaseDatabase.getInstance().getReference("Daftar_siswa").child(stringKelas).push();
+                DatabaseReference mRef = FirebaseDatabase.getInstance().getReference("Daftar_siswa").child(stringKelas).child(stringStudi).push();
 
                 DatabaseReference keyKelas = mRef.child("Kelas");
                 DatabaseReference keyNama = mRef.child("Nama");
