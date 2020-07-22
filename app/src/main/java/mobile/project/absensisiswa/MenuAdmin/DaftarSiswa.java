@@ -23,7 +23,7 @@ public class DaftarSiswa extends AppCompatActivity {
     }
 
     public void kelas1(View view) {
-        Intent intent = new Intent(DaftarSiswa.this, DaftarProdi.class);
+        Intent intent = new Intent(DaftarSiswa.this, SiswaKelas1.class);
         intent.putExtra("kelas", "1");
         startActivity(intent);
     }

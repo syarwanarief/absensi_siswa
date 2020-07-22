@@ -35,7 +35,7 @@ public class DaftarProdi extends AppCompatActivity {
 
                     if (stringKelas.equals("1")){
 
-                        Intent go = new Intent(DaftarProdi.this, SiswaIPSKelas1.class);
+                        Intent go = new Intent(DaftarProdi.this, SiswaKelas1.class);
                         startActivity(go);
 
                     }else if (stringKelas.equals("2")){
@@ -60,7 +60,7 @@ public class DaftarProdi extends AppCompatActivity {
 
            if (stringKelas.equals("1")){
 
-               Intent go = new Intent(DaftarProdi.this, SiswaIPAKelas1.class);
+               Intent go = new Intent(DaftarProdi.this, SiswaKelas1.class);
                startActivity(go);
 
            }else if (stringKelas.equals("2")){

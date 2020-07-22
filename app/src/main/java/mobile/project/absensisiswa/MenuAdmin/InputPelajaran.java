@@ -41,6 +41,12 @@ public class InputPelajaran extends AppCompatActivity {
                 keyKelas.setValue(stringKelas);
                 keyMP.setValue(stringPelajaran);
 
+                DatabaseReference mRef1 = FirebaseDatabase.getInstance().getReference("Daftar_Pelajaran").child("All").push();
+
+                DatabaseReference keyPel = mRef1.child("Mata_Pelajaran");
+
+                keyPel.setValue(stringPelajaran);
+
                 Toast.makeText(getApplicationContext(), "Berhasil Menambah", Toast.LENGTH_SHORT).show();
 
                 mataPelajaran.setText("");

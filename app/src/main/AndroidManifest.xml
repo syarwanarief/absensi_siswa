@@ -26,13 +26,11 @@
             android:label="Daftar Siswa"/>
         <activity android:name=".MenuAdmin.SiswaIPAKelas2"
             android:label="Daftar Siswa"/>
-        <activity android:name=".MenuAdmin.SiswaIPAKelas1"
+        <activity android:name=".MenuAdmin.SiswaKelas1"
             android:label="Daftar Siswa"/>
         <activity android:name=".MenuAdmin.SIswaIPSKelas3"
             android:label="Daftar Siswa"/>
         <activity android:name=".MenuAdmin.SiswaIPSKelas2"
-            android:label="Daftar Siswa"/>
-        <activity android:name=".MenuAdmin.SiswaIPSKelas1"
             android:label="Daftar Siswa"/>
         <activity android:name=".MenuAdmin.DaftarSiswa"
             android:label="Daftar Siswa"/>

@@ -89,12 +89,13 @@
             android:layout_marginTop="10pt">
         </TextView>
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/mataPelajaran"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text">
-        </EditText>
+            android:layout_marginTop="4pt">
+
+        </androidx.appcompat.widget.AppCompatSpinner>
 
         <RelativeLayout
             android:layout_width="match_parent"
