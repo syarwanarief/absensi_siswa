@@ -245,11 +245,6 @@ public class AbsensiAction extends AppCompatActivity {
         keyKet.setValue("Sakit");
 
         nama.setText("");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
 
         try {
             // hentikan sms server
@@ -257,6 +252,13 @@ public class AbsensiAction extends AppCompatActivity {
         } catch (IOException e) {
             Log.e(getClass().getName(), e.getMessage(), e);
         }
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
     }
 
 }

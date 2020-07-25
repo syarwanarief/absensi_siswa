@@ -9,25 +9,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_margin="5pt">
+        android:orientation="vertical">
 
         <ImageView
+            android:background="@drawable/gradient"
             android:layout_width="match_parent"
-            android:layout_height="50pt"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/logo">
-
-        </ImageView>
+            android:layout_height="80pt"
+            android:src="@drawable/logo"
+            android:paddingTop="10pt"
+            android:paddingBottom="10pt"
+            android:layout_marginBottom="15pt"></ImageView>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
+            android:layout_margin="5pt"
             android:layout_marginTop="35pt">
 
             <Button
@@ -46,6 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
+            android:layout_margin="5pt"
             android:layout_marginTop="10pt">
 
             <Button
@@ -64,6 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
+            android:layout_margin="5pt"
             android:layout_marginTop="10pt">
 
             <Button
