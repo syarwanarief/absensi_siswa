@@ -87,7 +87,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="5"
                 android:layout_margin="10pt"
-                android:onClick="tentangSekolah">
+                android:onClick="profil">
 
                 <ImageView
                     android:layout_width="match_parent"
